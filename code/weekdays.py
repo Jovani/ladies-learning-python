@@ -1,7 +1,10 @@
 today = "Monday"
+
 if today == "Saturday":
-    print "You can sleep in, but you're better off going to Ladies Learning Code"
+    print("You can sleep in, but you're better off going to Ladies Learning Code")
+
 elif today == "Sunday":
-    print "Fine, sleep in"
+    print("Fine, sleep in")
+
 else:
-    print "You're late for work again!"
+    print("You're late for work again!")

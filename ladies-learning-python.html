@@ -20,8 +20,9 @@
       <script src="assets/default.js"></script>
    </head>
    <body style="display: none">
-      <section class="slides layout-regular template-default" />
-      <img src="assets/images/ladieslearningcode-125x125.gif" />
+      <section class="slides layout-regular" />
+      <div><img src="assets/images/ladieslearningcode-125x125.gif" /></div>
+      <div><img src="assets/images/ladieslearningcode-125x125.gif" /></div>
       <article>
          <h1>
             Learning to Program
@@ -29,10 +30,11 @@
             with Python 
          </h1>
          <br />
+         <h3>Ivan Djokic &amp; Sam Mullin</h3>
          <p>
-            Juan Musleh 
             <br />
-            @juanmusleh
+            <br />
+            Original slides by Juan Musleh, @juanmusleh
          </p>
       </article>
       <article id="what-is-python?">
@@ -57,7 +59,7 @@
          <h3>
             1. Your computer speaks a different language.
          </h3>
-         <p>If humans and computers could speak the same language, we wouldn't need a programming language</p>
+         <p>If humans and computers could speak the same language, we wouldn't need a programming language.</p>
          <img src="assets/images/machine-language.jpg" width="600" height="411" border="1" />
       </article>
       <article id="middle-ground">
@@ -78,57 +80,69 @@
             2. Your computer is not very smart.
          </h3>
          <p> Your computer can only do what you tell it to if you give it exact instructions.</p>
-         <p> A program is made up of a set of instructions and each instruction performs a very specific task</p>
+         <p> A program is made up of a set of instructions and each instruction performs a very specific task.</p>
       </article>
       <article id="stupid-computer">
          <h3>People vs. Computers</h3>
          <p class="large-font">
-            Suppose you had to teach a kid how to cross a road
+            Suppose you had to teach a person, and an alien how to cross a road.
          </p>
       </article>
       <article>
-         <h3>People vs. Computers</h3>
-         <p>1. Stand on the pavement. </p>
+         <h3>Teaching a person</h3>
+         <p>1. Stand near the edge of the sidewalk. </p>
          <p>2. If traffic is coming, let it pass. </p>
          <p>3. When it's safe, walk accross the road.</p>
       </article>
       <article>
          <h3>People understand GENERAL instructions.</h3>
          <p>
-            We left out some parts of the process, but a person could figure out:
+            We left out some critical details of the process, but based on the context, people can fill in the blanks.
          </p>
-         <p> What is a pavement? How to get there?
-         <p> What is traffic?
-         <p> How do you walk across the road?
-         <p> When do you stop walking?
-         <p>etc, etc, etc (there are many little steps)</p>
+         <br />
+         <h3>What about the alien?</h3>
+         <br />
+         <div class="build">
+            <p> What is a pavement? How to get there?
+            <p> What is traffic?
+            <p> How do you walk across the road?
+            <p> When do you stop walking?
+            <p>etc, etc, etc (there are many little steps)</p>
+         </div>
       </article>
       <article id="computers-exact">
          <style>
-            #computers-exact p { margin: 150px 0px; };
+            #computers-exact h3 { margin: 250px 70px; };
          </style>
          <h3>Computers understand EXACT instructions.</h3>
-         <p class="large-font">
-            This same recipe for a computer would be much, much longer.
-         </p>
       </article>
       <article>
          <h3>1. Stand on the Pavement</h3>
-         <p>What is a pavement?</p>
-         <p>Where on the pavement to stand?</p>
-         <p>What if there is no pavement?</p>
-         <p>Stand facing which way?</p>
-         <p>How to stand?</p>
-         <p>etc, etc, etc</p>
+         <br />
+         <div class="build">
+            <div>
+               <p>What is a pavement?</p>
+               <p>Where on the pavement to stand?</p>
+               <p>What if there is no pavement?</p>
+               <p>Stand facing which way?</p>
+               <p>How to stand?</p>
+               <p>etc, etc, etc</p>
+            </div>
+         </div>
       </article>
       <article>
          <h3>2. If traffic coming let it pass</h3>
-         <p>What is traffic?</p>
-         <p>What if there is no traffic?</p>
-         <p>What if it's a one way street?</p>
-         <p>What if it's a two way street?</p>
-         <p>What if there's a cop and traffic lights?</p>
-         <p>etc, etc, etc</p>
+         <br />
+         <div class="build">
+            <div>
+               <p>What is traffic?</p>
+               <p>What if there is no traffic?</p>
+               <p>What if it's a one way street?</p>
+               <p>What if it's a two way street?</p>
+               <p>What if there's a cop and traffic lights?</p>
+               <p>etc, etc, etc</p>
+            </div>
+         </div>
       </article>
       <article id="learned-programming">
          <style>
@@ -148,11 +162,14 @@
          <h3>
             Why Python Rocks!
          </h3>
-         <p>Easy to use: It is closer to human language than to machine language.</p>
-         <p>Powerful: It's used in academic research, at Google and YouTube.</p>
-         <p>Runs Everywhere: It's platform indepenent. You can write your program on a Mac and run it on Windows.</p>
-         <p>Free and Open Source.</p>
-         <p>Great Community.</p>
+         <br />
+         <div class="build">
+            <p>Easy to use: It is closer to human language than to machine language.</p>
+            <p>Powerful: It's used in academic research, at Google and YouTube.</p>
+            <p>Runs Everywhere: It's platform indepenent. You can write your program on a Mac and run it on Windows.</p>
+            <p>Free and Open Source (code is avaliable freely to anyone).</p>
+            <p>Great Community.</p>
+         </div>
       </article>
       <article id="python-interpreter">
          <style>
@@ -192,7 +209,7 @@
             <pre>>>> 2 - 3</pre>
             <pre> -1 </pre>
             <pre>>>> 297 - 5 * 25 - 130</pre>
-            <pre>>>> 42</pre>
+            <pre> 42 </pre>
             <p class="large-font">Python can do math, and it can do it much quicker than a person can.</p>
          </section>
       </article>
@@ -217,9 +234,9 @@
          <h3>
             Numbers in Python 
          </h3>
-         <p>In Python ...</p>
+         <p>In programming ...</p>
          <p class="python-class">Numbers without decimals are called <b>INTEGERS</b>. We just did some math with some integers.</p>
-         <p> <b>1</b> is an Integer. <b>1.0</b> is NOT an integer </p>
+         <p> <b>1</b> is an Integer, <b>1.0</b> is NOT. </p>
          <pre>>>> type(1)<br />&lttype 'int'&gt <br />>>> type(1.0)<br />&lttype 'float'&gt </pre>
       </article>
       <article id="string">
@@ -229,10 +246,9 @@
          <h3>
             Strings in Python 
          </h3>
-         <p>In Python ...</p>
          <p class="python-class">Letters, words, and sentences are called <b>STRINGS</b>. We tell Python that we are intending to use a string by wrapping it in quotes.</p>
          <pre>>>> type("What's up?")<br />&lttype 'str'&gt </pre>
-		 <p> Think of a string of characters.</p>
+       <p> Think of a string of characters.</p>
       </article>
       <article id="types-galore">
          <style>
@@ -241,10 +257,11 @@
          </style>
          <h3>Types</h3>
          <div class="build">
-            <p>Python is extremely picky and needs to classify everything before it knows what to do with it.<br />Python knows that ...</p>
+            <p>Python is extremely picky and likes to classify everything before it decides what to do with it.<br />Python knows that ...</p>
             <p class="large-font">The number <b>1</b> is an <b>Integer</b>.
+            <p class="large-font">The number <b>1.0</b> is an <b>Float</b>.
             <p class="large-font">The word <b>"ladies"</b> is a <b>String</b>.
-            <p>Integers and Strings are <b>Types</b> in Python.</p>
+            <p>Integers, Floats, and Strings are <b>Types</b> in Python.</p>
          </div>
       </article>
       <article id="types-picky">
@@ -254,11 +271,11 @@
          </style>
          <h3>Types</h3>
          <div class="build">
-            <pre>>>>1+1</pre>
+            <pre>>>> 1 + 1</pre>
             <pre>2</pre>
-            <pre>>>>"1"+"1"</pre>
+            <pre>>>> "1" + "1"</pre>
             <pre>"11"</pre>
-            <pre>>>>"1"+2</pre>
+            <pre>>>> "1" + 2</pre>
             <pre>
 Traceback (most recent call last):
   File "<stdin />", line 1, in <module />
@@ -274,9 +291,10 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <h3>Programming Words</h3>
          <p>Some programming words that we have learned so far:</p>
          <p class="large-font"><b>Integer</b>.
+         <p class="large-font"><b>Float</b>.
          <p class="large-font"><b>String</b>.
          <p class="large-font"><b>Type</b>.
-         <p> Integers and Strings are Types </p>
+         <p> Integers, Floats, and Strings are Types </p>
       </article>
       <article id="back-python-robot">
          <style>
@@ -312,6 +330,8 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          </style>
          <h3>String</h3>
          <div class="class-diagram">
+            " "<br /><br />
+            "A"<br /><br />
             "Ladies"<br /><br />
             "Hello World!"<br /><br />
             "The Zen of Python, by Tim Peters 
@@ -333,23 +353,19 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <section class="build">
             <pre>>>> "laura".capitalize()</pre>
             <pre>"Laura"</pre>
-            <pre>>>>"Hello you".replace("you", "Sam")</pre>
+            <pre>>>> "Hello you".replace("you", "Sam")</pre>
             <pre>'Hello Sam'</pre>
-            <pre>>>>"No More CAPS".lower()"</pre>
+            <pre>>>> "No More CAPS".lower()</pre>
             <pre>'no more caps'</pre>
          </section>
       </article>
       <article>
          <h3>Building Strings</h3>
          <section class="build">
-            <pre>>>>"There are " + "30 " + "days in April"</pre>
+            <pre>>>> "There are " + "30 " + "days in April"</pre>
             <pre>'There are 30 days in April'</pre>
-            <pre>>>>"Today is a " + "Saturday"</pre>
+            <pre>>>> "Today is a " + "Saturday"</pre>
             <pre>'Today is a Saturday'</pre>
-            <pre>>>> "There are " + "7 " + "days in a week and " + "30 " + \
-... "days in April"
-</pre>
-            <pre>'There are 7 days in a week and 30 days in April'</pre>
          </section>
       </article>
       <article>
@@ -357,11 +373,11 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             Python Numeric types support these operations
          </h3>
          <section class="build">
-            <pre>>>>abs(-99)</pre>
+            <pre>>>> abs(-99)</pre>
             <pre>99</pre>
-            <pre>>>>pow(2,3)</pre>
+            <pre>>>> pow(2, 3)</pre>
             <pre>8</pre>
-            <pre>>>>5 % 2</pre>
+            <pre>>>> 5 % 2</pre>
             <pre>1</pre>
          </section>
       </article>
@@ -373,8 +389,8 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             Functions 
          </h3>
          <div class="build">
-            <p class="large-font"><b>abs</b> and <b>pow</b> are builtin functions that you can use with integers</p>
-            <p class="large-font"><b>capitalize</b> and <b>replace</b> are string functions</p>
+            <p class="large-font"><b>abs</b> and <b>pow</b> are builtin functions that you can use with integers.</p>
+            <p class="large-font"><b>capitalize</b> and <b>replace</b> are functions of strings.</p>
             <p class="large-font">Functions are actions.</p>
          </div>
       </article>
@@ -391,7 +407,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <p> If you ask Python to do something that it doesn't know how to do, it will give you an error. </p>
          <p> Get in the habit of reading the error messages, they will give you a clue on what went wrong. </p>
          <pre>>>> pow("Lady", "Gaga") <br />Traceback (most recent call last):<br /> File "<stdin />", line 1, in <module /> <br /> TypeError: unsupported operand type(s) for ** or pow(): <br />'str' and 'str'
-		</pre>
+      </pre>
       </article>
       <article id="boolean">
          <h3>Meet one more type - Boolean</h3>
@@ -404,14 +420,23 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <h3>
             Laziness
          </h3>
-         <p>"Laziness... The first great virtue of a programmer." -- Larry Wall </p>
-         <p>What if we could type in "ladieslearningcode" just once, and store it for later use? We can!</p>
-         <section>
-            <pre>>>> llc = "ladieslearningcode"
-		  <br />>>> llc
-		  <br />"ladieslearningcode"</pre>
-         </section>
-         <p> We've just created a variable <b>llc</b> and gave it the <b>value</b> "ladieslearningcode".</p>
+         <br />
+         <div class="build">
+            <div>
+               <p>"Laziness... The first great virtue of a programmer." -- Larry Wall </p>
+               <br>
+            </div>
+
+            <div>
+               <p>What if we could type in "ladieslearningcode" just once, and store it for later use? We can!</p>
+               <section>
+                  <pre>>>> llc = "ladieslearningcode"
+                  <br />>>> llc
+                  <br />"ladieslearningcode"</pre>
+               </section>
+               <p> We've just created a variable <b>llc</b> and gave it the <b>value</b> "ladieslearningcode".</p>
+            </div>
+         </div>
       </article>
       <article>
          <h3>
@@ -419,7 +444,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          </h3>
          <p>A variable is called just that because its value can change 
          <section class="build">
-            <pre>>>>party_budget = 1000</pre>
+            <pre>>>> party_budget = 1000</pre>
             <div>party_budget <img src="assets/images/arrow.png" />1000</div>
             <p>Now let's ask for the value of party_budget.</p>
             <pre>>>> party_budget</pre>
@@ -429,10 +454,10 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
       <article>
          <p>Changing a variable's value</p>
          <section class="build">
-            <pre>>>>party_budget = 1500</pre>
+            <pre>>>> party_budget = 1500</pre>
             <div>party_budget<img src="assets/images/arrow.png" /> 1500</div>
             <p>Let's ask for the value of party_budget once again.</p>
-            <pre>>>>party_budget</pre>
+            <pre>>>> party_budget</pre>
             <pre>1500</pre>
          </section>
       </article>
@@ -440,7 +465,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <h3>Multiple Variables</h3>
          <p>Let's introduce another variable.</p>
          <section class="build">
-            <pre>>>>team_building_budget = party_budget</pre>
+            <pre>>>> team_building_budget = party_budget</pre>
             <pre>1500</pre>
             <div>party_budget<img src="assets/images/arrow.png" /> 1500 <img src="assets/images/back-arrow.png" />
                team_building_budget
@@ -450,20 +475,20 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
       <article>
          <p>Let's ask for the value of each variable.</p>
          <section class="build">
-            <pre>>>>party_budget</pre>
+            <pre>>>> party_budget</pre>
             <pre>1500</pre>
-            <pre>>>>team_building_budget</pre>
+            <pre>>>> team_building_budget</pre>
             <pre>1500</pre>
             <p>Now set party_budget back to 1000 :(</p>
-            <pre>>>>party_budget = 1000 </pre>
+            <pre>>>> party_budget = 1000 </pre>
          </section>
       </article>
       <article>
          <p>Let's ask for the value of each variable again.</p>
          <section class="build">
-            <pre>>>>party_budget</pre>
+            <pre>>>> party_budget</pre>
             <pre>1000</pre>
-            <pre>>>>team_building_budget</pre>
+            <pre>>>> team_building_budget</pre>
             <pre>1500</pre>
          </section>
       </article>
@@ -476,20 +501,20 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             INTEGER
          </p>
          <section class="build">
-            <pre>>>>party_budget * 1000</pre>
+            <pre>>>> party_budget * 1000</pre>
             <pre>1000000</pre>
          </section>
       </article>
       <article>
          <h3>
-            How much can we spend on our party?	
+            How much can we spend on our party? 
          </h3>
          <p>
             When you assign a value of type INTEGER to a variable, you can use the variable the same way you would use an
             INTEGER
          </p>
          <section class="build">
-            <pre>>>>party_budget</pre>
+            <pre>>>> party_budget</pre>
             <pre>1000</pre>
             <p> What? That's it?! I thought we had 1000000 to spend? What happenend?</p>
          </section>
@@ -502,8 +527,8 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             that the result will be the new party_budget.
          <p>
          <section class="build">
-            <pre>>>>party_budget = party_budget * 1000</pre>
-            <pre>>>>party_budget</pre>
+            <pre>>>> party_budget = party_budget * 1000</pre>
+            <pre>>>> party_budget</pre>
             <pre>1000000</pre>
          </section>
       </article>
@@ -511,7 +536,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <h3>
             String Manipulation With Our Variable
          </h3>
-         <pre>>>>llc = "ladieslearningcode"</pre>
+         <pre>>>> llc = "ladieslearningcode"</pre>
          <p>You can now use this variable exactly like you would have used  strings such as "ladieslearningcode" before.</p>
          <section class="build">
             <pre>>>> llc.capitalize()</pre>
@@ -523,7 +548,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
       <article>
          <h3>Modifying the value with a function</h3>
          <p> What's the value of llc? </p>
-         <pre>>>>llc</pre>
+         <pre>>>> llc</pre>
          <pre>"ladieslearningcode"</pre>
       </article>
       <article id="wait-why">
@@ -549,23 +574,23 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
       <article>
          <h3>Building Strings - Revisited</h3>
          <section class="build">
-            <pre>>>>"There are " + "30 " + "days in April"</pre>
-            <pre>>>>days = 30
->>>"There are %d days in April" % days </pre>
+            <pre>>>> "There are " + "30 " + "days in April"</pre>
+            <pre>>>> days = 30
+>>> "There are {} days in April".format(days) </pre>
             <pre>'There are 30 days in April'</pre>
-            <pre>>>>"Today is a "  + "Saturday"</pre>
-            <pre>>>>day = "Saturday"
->>>"Today is a %s" % day</pre>
+            <pre>>>> "Today is a " + "Saturday"</pre>
+            <pre>>>> day = "Saturday"
+>>> "Today is a {}".format(day)</pre>
             <pre>'Today is a Saturday'</pre>
          </section>
       </article>
       <article>
          <section class="build">
             <pre>
->>>weekdays = 7
->>>months = 12
->>>"There are %d days in a week and %d months in a year"
-% (weekdays, months)</pre>
+>>> weekdays = 7
+>>> months = 12
+>>> "There are {} days in a week and {} months in a year"
+      .format(weekdays, months)</pre>
             <pre>'There are 12 days in a week and 12 months in a year'</pre>
          </section>
       </article>
@@ -578,6 +603,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          </h3>
          <div class="build">
             <p class="large-font">Integer</p>
+            <p class="large-font">Float</p>
             <p class="large-font">String</p>
             <p class="large-font">Boolean</p>
             <p class="large-font">Variable</p>
@@ -625,7 +651,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             to be explicit.
          </p>
          <section>
-            <pre>party_budget = 1000<br />print party_budget</pre>
+            <pre>party_budget = 1000<br />print(party_budget)</pre>
             <p><b>print</b> means output to screen</p>
          </section>
          <p>(example in code/party.py)</p>
@@ -634,15 +660,13 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
       <article>
          <h3> Strings - Special Characters </h3>
          <p>
-            print "CSI Annex"<br />	
-            print "720 Bathurst Street"<br />
-            print "Toronto, Ontario"<br />
+            print("The Lab")<br /> 
+            print("483 QUEEN STREET WEST, 3RD FLOOR")<br />
+            print("TORONTO, CANADA, M5V 2A7")<br />
          </p>
-         <p>print "CSI Annex \n720 Bathurst Street \nToronto, Ontario"</p>
-         <p> Try these other special characters: </p>
+         <p>print("The Lab \483 Queen Street West \nToronto, Ontario")</p>
+         <p>Try these other special characters: </p>
          <p>
-            \' <br />
-            \" <br />
             \\ <br />
             \t <br />
             \n <br />
@@ -669,9 +693,9 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          </h3>
          <p>There's a function that you can use to get input from a user</p>
          <section class="build">
-            <pre>>>>raw_input("What's your name?\n")</pre>
-            <pre>>>>name = raw_input("What's your name?\n")</pre>
-            <pre>>>>age = raw_input("How old are you?\n")</pre>
+            <pre>>>> raw_input("What's your name? ")</pre>
+            <pre>>>> name = raw_input("What's your name? ")</pre>
+            <pre>>>> age = raw_input("How old are you? ")</pre>
             <p>User input is always returned as a <b>string</b></p>
          </section>
       </article>
@@ -694,7 +718,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
                There are 98 ticket(s) left<br/>
             </p>
             <br/>
-            <p>(answers in assignments/tickets_1.py)</p>
+            <p>(answers in assignments/answers/tickets_1.py)</p>
          </div>
       </article>
 
@@ -708,7 +732,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <p class="large-font">Try using your program multiple times and try <b>breaking</b> it!</p>
          <p class="large-font">What could go wrong with your program?</p>
          <section class="build">
-            <p class="large-font"> Now that we know it's broken, we need to <b>Fix it!</b>	
+            <p class="large-font"> Now that we know it's broken, we need to <b>Fix it!</b>   
          </section>
       </article>
       <article id="conditional-instructions">
@@ -719,8 +743,8 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             Conditional Logic
          </h3>
          <p>We can't sell more tickets than we have.</p>
-		 <p>If the user asks for <b>fewer</b> tickets than what we have, we sell them tickets.</p>
-		 <p>If the user asks for <b>more</b> tickets than what we have, we do <b>NOT</b> sell them tickets.</p>
+       <p>If the user asks for <b>fewer</b> tickets than what we have, we sell them tickets.</p>
+       <p>If the user asks for <b>more</b> tickets than what we have, we do <b>NOT</b> sell them tickets.</p>
          <br/>
          <p> How do we tell the program to do something different in each case?</p>
       </article>
@@ -729,10 +753,10 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             Conditional Logic
          </h3>
          <pre>if True:
-	  <br />    print "Good choice!"
-	  <br />else:
-	  <br />    print "This program will always ignore me :("
-	  </pre>
+     <br />    print("Good choice!")
+     <br />else:
+     <br />    print("This program will always ignore me :(")
+     </pre>
          <p class="large-font"> Indentation Matters </p>
       </article>
       <article id="greater-than">
@@ -755,10 +779,10 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          </h3>
          <p>Now try:</p>
          <section class="build">
-            <pre>>>>num_tickets = 100</pre>
-            <pre>>>>120 > num_tickets</pre>
+            <pre>>>> num_tickets = 100</pre>
+            <pre>>>> 120 > num_tickets</pre>
             <pre>True</pre>
-            <pre>>>>30 > num_tickets</pre>
+            <pre>>>> 30 > num_tickets</pre>
             <pre>False</pre>
          </section>
       </article>
@@ -770,24 +794,24 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             Fix your tickets program so that it handles the case where the user asks for more tickets than what you have.
          </p>
          <pre>if tickets_wanted > num_tickets:
-		<br />    print "Sorry we don't have that many tickets available"
-		<br />else:¬
-		<br />    #DO SOME STUFF HERE
-		<br />    print "Start Selling Tickets"
-		</pre>
-         <p>(answers in assignments/tickets_2.py)</p>
+      <br />    print("Sorry we don't have that many tickets available")
+      <br />else:
+      <br />    # DO SOME STUFF HERE
+      <br />    print("Start Selling Tickets")
+      </pre>
+         <p>(answers in assignments/answers/tickets_2.py)</p>
       </article>
       <article>
          <h3>
             What if there are more possibilities?
          </h3>
          <pre>if today == "Saturday":
-		<br />    print "You can sleep in, but you're better off going to LLC" 
-		<br />elif today == "Sunday":
-		<br />    print "Fine, sleep in"
-		<br />else:
-		<br />    print "You're late for work again!"
-		</pre>
+      <br />    print("You can sleep in, but you're better off going to LLC" )
+      <br />elif today == "Sunday":
+      <br />    print("Fine, sleep in")
+      <br />else:
+      <br />    print("You're late for work again!")
+      </pre>
          <p> Try running this with different values of today.</p>
          <p>(example in code/weekdays.py)</p>
       </article>
@@ -849,8 +873,8 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          </h3>
          <p>Your program is <b>"thinking"</b> about a number and you need to guess what that number is.</p>
          <section class="build">
-            <pre>>>>import random</pre>
-            <pre>>>>secret_number = random.randint(1,20)</pre>
+            <pre>>>> import random</pre>
+            <pre>>>> secret_number = random.randint(1, 20)</pre>
             <p>We know how to ask the player for input</p>
             <p>We know how to compare the guess to the secret number</p>
             <p>But what if we want to give the user more than one chance to get it right?</p>
@@ -865,7 +889,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             <pre>
 some_condition = True
 while some_condition:
-    print "Are we there yet?"
+    print("Are we there yet?")
 </pre>
             <p>This program will run as long as some_condition is True</p>
             <p>Please make it <b>STOP</b></p>
@@ -873,30 +897,30 @@ while some_condition:
             <pre>
 some_condition = True
 while some_condition:
-    print "Are we there yet?"
+    print("Are we there yet?")
     some_condition = False
 </pre>
          </section>
       </article>
       <article id="while-loop-example">
          <h3>
-            While Loop Example	
+            While Loop Example   
          </h3>
          <section class="build" />
          <pre>
 hungry = "yes"
 while hungry == "yes":
-    print "Eat"
+    print("Eat")
     hungry = raw_input("Are you hungry?\n")
-print "No more eating"
+print("No more eating")
 </pre>
          <p> Another way to say the same thing </p>
          <pre>
 while True:
-    print "Eat"
+    print("Eat")
     hungry = raw_input("Are you hungry?\n")
     if hungry != "yes":
-        print "No more eating"
+        print("No more eating")
         break
 </pre>
          <p>(example in code/hungry.py and code/hungry2.py)</p>
@@ -920,20 +944,53 @@ while True:
             Take a guess: <b>15</b></br>
             Good job! You guessed my number in 5 guesses!
          </p>
-         <p>(answers in assignments/random_game.py)</p>
+         <p>(answers in assignments/answers/random_game.py)</p>
       </article>
       <article>
          <h3>Tell me exactly how many times</h3>
          <section class="build">
-            <pre>
-print "Counting to 10"
-for i in range(0,11):
-    print i
-
+<pre>
+print("Counting to 10")
+for i in range(0, 11):
+    print(i)
 </pre>
-            <p> What's range?</p>
-            <p> Why start at 0? </p>
-            <p> Why end at 11? </p>
+
+<pre>
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+
+         </section>
+      </article>
+      <article>
+      <section>
+         <h3>Range</h3>
+<pre>
+print("Counting to 10")
+for i in range(0, 11):
+    print(i)
+</pre>
+            <div class="build">
+               <p> What is Range?</p>
+               <p> Why start at 0? </p>
+               <p> Why end at 11? </p>
+               <p> What does it's output actually look like?</p>
+               <div>
+<pre>
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</pre>
+                  <p>It's a <b>List</b>! More on this later.</p>
+               </div>
+            </div>
          </section>
       </article>
       <article>
@@ -941,14 +998,14 @@ for i in range(0,11):
          <section>
             <pre>
 secret = "secretcode"
-print "You get 3 chances to get this right"
-for i in range(0,3):
+print("You get 3 chances to get this right")
+for i in range(0, 3):
     password = raw_input("Please enter your password: ")
     if password == secret:
-        print "You're in!"
+        print("You're in!")
         break
 if password != secret:
-    print "Sorry you've lost your chance, it's too late now"
+    print("Sorry you've lost your chance, it's too late now")
 
 </pre>
             <p>(example in code/secret_word.py)</p>
@@ -959,16 +1016,16 @@ if password != secret:
          <p> Anything that you can do with a <b>while</b> loop you can do with a <b>for</b> loop </p>
          <section class="build" />
          <pre>
-print "Counting to 10"
-for i in range(0,11):
-    print i
+print("Counting to 10")
+for i in range(0, 11):
+    print(i)
 
 </pre>
          <pre>
-print "Counting to 10"
+print("Counting to 10")
 x = 0
 while x < 11:
-    print x
+    print(x)
     x = x + 1
 </pre>
       </article>
@@ -979,21 +1036,21 @@ while x < 11:
          <h3>Lists</h3>
          <section class="build">
             <pre>
->>>[1, 2, 3, 4, 5]
->>>numbers = [1, 2, 3, 4, 5]
+>>> [1, 2, 3, 4, 5]
+>>> numbers = [1, 2, 3, 4, 5]
 </pre>
             <pre>
->>>numbers
+>>> numbers
 </pre>
             <pre>
 [1, 2, 3, 4, 5]
 </pre>
             <pre>
->>>friends = ['Rachel', 'Ross', 'Monica', 'Phoebe',
+>>> friends = ['Rachel', 'Ross', 'Monica', 'Phoebe',
 ...'Joey', 'Chandler'] 
 </pre>
             <pre>
->>>friends
+>>> friends
 </pre>
             <pre>
 ['Rachel', 'Ross', 'Monica', 'Phoebe', 'Joey', 'Chandler']
@@ -1003,17 +1060,17 @@ while x < 11:
       </article>
       <article id="access-list-class">
          <section class="build">
-            <pre>>>>friends[0]</pre>
+            <pre>>>> friends[0]</pre>
             <pre>'Rachel'</pre>
-            <pre>>>>friends[1]</pre>
+            <pre>>>> friends[1]</pre>
             <pre>'Ross'</pre>
-            <pre>>>>friends[10]</pre>
+            <pre>>>> friends[10]</pre>
             <pre>
 Traceback (most recent call last):
   File "<stdin />", line 1, in <module />
 IndexError: list index out of range
 </pre>
-            <pre>>>>len(friends)
+            <pre>>>> len(friends)
 6</pre>
          </section>
       </article>
@@ -1023,9 +1080,9 @@ IndexError: list index out of range
          </style>
          <h3>Looping over items in a list</h3>
          <pre>
->>>for friend in friends:
-...    print friend
-		</pre>
+>>> for friend in friends:
+...    print(friend)
+      </pre>
          <pre>
 Rachel
 Ross
@@ -1035,7 +1092,7 @@ Joey
 Chandler
 </pre>
          <p> Write a program that prints all the days of the week </p>
-         <p> (answers in assignments/print_weedays.py)</p>
+         <p> (answers in assignments/answers/print_weedays.py)</p>
       </article>
       <article>
          <h3>
@@ -1043,11 +1100,11 @@ Chandler
          </h3>
          <p> We can add items to a list, remove items from a list and even combine lists together </p>
          <pre>
->>>woody_allen_movies = ["Vicky Cristina Barcelona", 
+>>> woody_allen_movies = ["Vicky Cristina Barcelona", 
 ... "Whatever Works"]
->>>new_movie = "Midnight in Paris"
->>>woody_allen_movies.append(new_movie)
->>>woody_allen_movies
+>>> new_movie = "Midnight in Paris"
+>>> woody_allen_movies.append(new_movie)
+>>> woody_allen_movies
 </pre>
          <p><b>append</b> adds an item to the end of the list.</p>
       </article>
@@ -1057,12 +1114,12 @@ Chandler
          </h3>
          <p> We can add items to a list, remove items from a list and even combine lists together </p>
          <pre>
->>>woody_allen_movies = ["Vicky Cristina Barcelona", 
+>>> woody_allen_movies = ["Vicky Cristina Barcelona", 
 ... "Whatever Works"]
->>>new_movie = "Midnight in Paris"
->>>woody_allen_movies.append(new_movie)
->>>woody_allen_movies.append(new_movie)
->>>woody_allen_movies.remove(new_movie)
+>>> new_movie = "Midnight in Paris"
+>>> woody_allen_movies.append(new_movie)
+>>> woody_allen_movies.append(new_movie)
+>>> woody_allen_movies.remove(new_movie)
 </pre>
          <pre>
 >>> woody_allen_movies.remove("inception")
@@ -1086,14 +1143,75 @@ ValueError: list.remove(x): x not in list
             <p class="large-font">for</p>
             <p class="large-font">break</p>
             <p class="large-font">list</p>
+            <div>
+               <br />
+               <p>One more thing...</p>
+            </div>
          </div>
       </article>
+
+      <article>
+         <h3>Dictionaries</h3>
+         <br />
+         <div class="build">
+            <p>A List stores objects inside, and indexes them.</p>
+            <p>But what if you wanted to have a more meaningful key than numbers?</p>
+<pre>
+>>> my_dict = {
+   'first name': 'Ivan',
+   'last name': 'Djokic',
+   'employer': 'G Adventures',
+   'job': 'Software Developer'
+}
+</pre>
+<pre>
+>>> like_a_list = {
+   0: 'A',
+   1: 'B',
+   2: 'C',
+   3: 'D',
+}
+</pre>
+         </div>
+      </article>
+
+      <article>
+<pre>
+>>> my_dict = {
+   'first name': 'Ivan',
+   'last name': 'Djokic',
+   'employer': 'G Adventures',
+   'job': 'Software Developer'
+}
+</pre>
+<div class="build">
+<div>
+<pre>
+>>> my_dict['first name']
+</pre>
+<pre>
+'Ivan'
+</pre>
+</div>
+<div>
+<pre>
+>>> my_dict['middle name']
+</pre>
+<pre>
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'middle name'
+</pre>
+</div>
+         </div>
+      </article>
+
       <article id="from-scratch">
          <style>
             #from-scratch .large-font { margin-top: 70px }
          </style>
          <h3>Hangman</h3>
-         <p>Let's make a hangman game using what we learnt today.</p>
+         <p>Let's make a hangman game using what we learned today.</p>
          <p>But before you start coding away, it helps to think about
             what you're trying to do.
          </p>
@@ -1101,22 +1219,39 @@ ValueError: list.remove(x): x not in list
             to break it down.
          </p>
          <p>You can start by playing hangman on paper with each other.</p>
-         <p>(answers in assignments/hangman.py)</p>
+         <p>(answers in assignments/answers/hangman.py)</p>
       </article>
       <article id="credits-book">
          <style>
             #credits-book img { margin: 30px 100px 100px 200px; }
          </style>
-         <h3>Credits</h3>
-         <p>Inspired by <b>Python Programming for the absolute beginner</b></p>
-         <img src="assets/images/absolute_beginner.jpg" />
+         <h3>Some Extra Resources</h3>
+         <p>
+            Learn Python the Hard Way.
+            <a href="http://learnpythonthehardway.org/book/">http://learnpythonthehardway.org/book/</a>
+            <p>
+               Free online, with ads.
+            </p>
+            <p>
+               $29.95 USD for complete video course, ad-free online book, and avaliable in PDF, and ePub!
+            </p>
+         </p>
+         <br />
+         <p>
+            Another great resource:
+            Dive Into Python 3
+            <a href="http://www.diveintopython3.net/">http://www.diveintopython3.net/</a>
+            <p>Completely free online!</p>
+            <p>A bit more advanced, but completely doable.</p>
+            <p>(Also available on dead trees!)</p>
+         </p>
       </article>
       <article id="credits-twg">
          <style>
             #credits-twg .large-font { line-height: 80px; margin: 100px; text-align: center; }
          </style>
          <p class="large-font">
-            Big, big thank you to <br /><a href="http://www.freshbooks.com">Freshbooks</a>, 
+            Big, big thank you to <br /><a href="http://www.gadventures.com">G Adventures</a>, 
             to <a href="http://ladieslearningcode.com/">Ladies Learning Code</a>
             and to  <b>all the mentors</b>! 
          </p>

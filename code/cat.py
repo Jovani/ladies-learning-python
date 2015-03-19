@@ -6,5 +6,5 @@ cat = """
   /  O  \       
    """
 
-print cat
+print(cat)
 
